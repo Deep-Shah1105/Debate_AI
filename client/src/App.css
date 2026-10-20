@@ -1,0 +1,100 @@
+/* General Body & App Container */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7fb;
+  margin: 0;
+  padding: 20px;
+  color: #333; /* Set a base text color */
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0; /* Added a separator for clarity */
+  padding-bottom: 12px;
+}
+
+/* Chat Components */
+.chatbox {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  height: 360px;
+  overflow-y: auto;
+  background: #fff;
+  margin-top: 14px;
+}
+
+.message {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #eee;
+}
+
+.message:last-child {
+  border-bottom: none; /* Remove border from the last message */
+}
+
+.message .who {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2563eb; /* Give the "AI" or "User" text a color */
+}
+
+/* -- NEW -- Reusable class for AI-generated text content */
+.ai-content {
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserves newlines and spaces, but wraps text */
+  word-wrap: break-word;   /* Ensures long words don't overflow */
+}
+
+
+/* Input Controls */
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  flex: 1;
+  font-size: 1rem; /* Ensures consistent font size with other elements */
+}
+
+button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: 600; /* Make button text slightly bolder */
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+
+/* Feedback Box Styling */
+.feedback-box {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
